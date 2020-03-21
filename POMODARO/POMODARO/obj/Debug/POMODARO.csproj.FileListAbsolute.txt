@@ -1,0 +1,10 @@
+C:\Users\Gyananjay\source\repos\POMODARO\POMODARO\obj\Debug\POMODARO.csprojAssemblyReference.cache
+C:\Users\Gyananjay\source\repos\POMODARO\POMODARO\obj\Debug\POMODARO.Form1.resources
+C:\Users\Gyananjay\source\repos\POMODARO\POMODARO\obj\Debug\POMODARO.Properties.Resources.resources
+C:\Users\Gyananjay\source\repos\POMODARO\POMODARO\obj\Debug\POMODARO.csproj.GenerateResource.cache
+C:\Users\Gyananjay\source\repos\POMODARO\POMODARO\obj\Debug\POMODARO.csproj.CoreCompileInputs.cache
+C:\Users\Gyananjay\source\repos\POMODARO\POMODARO\bin\Debug\POMODARO.exe.config
+C:\Users\Gyananjay\source\repos\POMODARO\POMODARO\bin\Debug\POMODARO.exe
+C:\Users\Gyananjay\source\repos\POMODARO\POMODARO\bin\Debug\POMODARO.pdb
+C:\Users\Gyananjay\source\repos\POMODARO\POMODARO\obj\Debug\POMODARO.exe
+C:\Users\Gyananjay\source\repos\POMODARO\POMODARO\obj\Debug\POMODARO.pdb
