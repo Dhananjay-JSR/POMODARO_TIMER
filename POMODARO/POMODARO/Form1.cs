@@ -32,27 +32,27 @@ namespace POMODARO
            // circularProgressBar1.Value = minute;
 
         }
-        int second = 0;
-        int minute=0;
+        int second = 60;
+        int minute=24;
       
        
 
         private void TICK_WORK(object sender, EventArgs e)
         {
             tick_rest.Enabled = false;
-            second++;
+            second--;
             High.Text = "Time to Take WORK";
-            if (second==61)                                         //SECOND TO CHANGE MINUTE
+            if (second==00)                                         //SECOND TO CHANGE MINUTE
             {
-                minute++;
-                second = 0;                                             //TIMER
+                minute--;
+                second = 60;                                             //TIMER
             }
             sec.Text = second.ToString();
             min.Text = minute.ToString();
-            if(minute==25)                                          //CHANGE WORK MODE TO BREAK TIME        //25 MIn
+            if(minute==0)                                          //CHANGE WORK MODE TO BREAK TIME        //25 MIn
             { 
-                second = 0;
-            minute = 0;
+                second = 60;
+            minute = 4;
             tick_rest.Enabled = true;                               //GO TO REST MODE
             }
         }
@@ -60,19 +60,19 @@ namespace POMODARO
         private void tickrest(object sender, EventArgs e)
         {
             tick_wk.Enabled = false;
-            second++;
+            second--;
             High.Text = "Time to Take Break";
             
-            if (second == 61)                                       //SECOMD TO CHNAGE MINUTE
+            if (second == 00)                                       //SECOMD TO CHNAGE MINUTE
             {
-                minute++;
-                second = 0;
+                minute--;
+                second = 60;
             }
             sec.Text = second.ToString();
             min.Text = minute.ToString();
-            if (minute == 4)                                            //4MINUTE BREAK TIME
+            if (minute == 0)                                            //4MINUTE BREAK TIME
             {
-                minute = 0;
+                minute = 25;
                 tick_wk.Enabled = true;
             }
         }
@@ -100,7 +100,7 @@ namespace POMODARO
         {
 
             tick_wk.Enabled = true;
-            minute++;
+            
             circularProgressBar1.Value = minute;
         }
     }
