@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Media;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -60,7 +61,10 @@ namespace POMODARO
             { 
                 second = 60;
             minute = 4;
-            tick_rest.Enabled = true;                               //GO TO REST MODE
+                SoundPlayer player = new SoundPlayer();
+                player.SoundLocation = @"C:\Windows\Media\Alarm01.wav";
+                player.Play();
+                tick_rest.Enabled = true;                               //GO TO REST MODE
             }
         }
 
@@ -90,8 +94,12 @@ namespace POMODARO
             if (minute == 0)                                            //4MINUTE BREAK TIME
             {
                 minute = 25;
+                SoundPlayer player = new SoundPlayer();
+                player.SoundLocation = @"C:\Windows\Media\Alarm01.wav";
+                player.Play();
+                label3.Text = round++.ToString();
                 tick_wk.Enabled = true;
-                label3.Text=round++.ToString();
+                
             }
         }
 
@@ -118,8 +126,11 @@ namespace POMODARO
         {
 
             tick_wk.Enabled = true;
-            
-            
+            SoundPlayer player = new SoundPlayer();
+            player.SoundLocation = @"C:\Windows\Media\notify.wav";
+            player.Play();
+
+
         }
 
         private void Form1_MouseDown(object sender, MouseEventArgs e)
@@ -135,6 +146,11 @@ namespace POMODARO
                 this.Left += e.X - lastPoint.X;
                 this.Top += e.Y - lastPoint.Y;
             }
+        }
+
+        private void Label4_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
