@@ -29,6 +29,7 @@ namespace POMODARO
 
         private void Form1_Load(object sender, EventArgs e)
         {
+           // circularProgressBar1.Value = minute;
 
         }
         int second = 0;
@@ -80,6 +81,8 @@ namespace POMODARO
         {
             
             tick_wk.Enabled = true;
+            minute++;
+            circularProgressBar1.Value = minute;
         }
 
         private void High_Click(object sender, EventArgs e)

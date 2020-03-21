@@ -8,3 +8,16 @@ C:\Users\Gyananjay\source\repos\POMODARO\POMODARO\bin\Debug\POMODARO.exe
 C:\Users\Gyananjay\source\repos\POMODARO\POMODARO\bin\Debug\POMODARO.pdb
 C:\Users\Gyananjay\source\repos\POMODARO\POMODARO\obj\Debug\POMODARO.exe
 C:\Users\Gyananjay\source\repos\POMODARO\POMODARO\obj\Debug\POMODARO.pdb
+C:\Users\EDIUS\Music\OnlineWebTest\POMODARO_TIMER\POMODARO\POMODARO\bin\Debug\POMODARO.exe.config
+C:\Users\EDIUS\Music\OnlineWebTest\POMODARO_TIMER\POMODARO\POMODARO\bin\Debug\POMODARO.exe
+C:\Users\EDIUS\Music\OnlineWebTest\POMODARO_TIMER\POMODARO\POMODARO\bin\Debug\POMODARO.pdb
+C:\Users\EDIUS\Music\OnlineWebTest\POMODARO_TIMER\POMODARO\POMODARO\bin\Debug\CircularProgressBar.dll
+C:\Users\EDIUS\Music\OnlineWebTest\POMODARO_TIMER\POMODARO\POMODARO\bin\Debug\WinFormAnimation.dll
+C:\Users\EDIUS\Music\OnlineWebTest\POMODARO_TIMER\POMODARO\POMODARO\obj\Debug\POMODARO.csprojAssemblyReference.cache
+C:\Users\EDIUS\Music\OnlineWebTest\POMODARO_TIMER\POMODARO\POMODARO\obj\Debug\POMODARO.Form1.resources
+C:\Users\EDIUS\Music\OnlineWebTest\POMODARO_TIMER\POMODARO\POMODARO\obj\Debug\POMODARO.Properties.Resources.resources
+C:\Users\EDIUS\Music\OnlineWebTest\POMODARO_TIMER\POMODARO\POMODARO\obj\Debug\POMODARO.csproj.GenerateResource.cache
+C:\Users\EDIUS\Music\OnlineWebTest\POMODARO_TIMER\POMODARO\POMODARO\obj\Debug\POMODARO.csproj.CoreCompileInputs.cache
+C:\Users\EDIUS\Music\OnlineWebTest\POMODARO_TIMER\POMODARO\POMODARO\obj\Debug\POMODARO.csproj.CopyComplete
+C:\Users\EDIUS\Music\OnlineWebTest\POMODARO_TIMER\POMODARO\POMODARO\obj\Debug\POMODARO.exe
+C:\Users\EDIUS\Music\OnlineWebTest\POMODARO_TIMER\POMODARO\POMODARO\obj\Debug\POMODARO.pdb

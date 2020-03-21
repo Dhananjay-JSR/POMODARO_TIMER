@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.button1 = new System.Windows.Forms.Button();
             this.sec = new System.Windows.Forms.Label();
             this.min = new System.Windows.Forms.Label();
@@ -36,6 +37,7 @@
             this.tick_wk = new System.Windows.Forms.Timer(this.components);
             this.High = new System.Windows.Forms.Label();
             this.tick_rest = new System.Windows.Forms.Timer(this.components);
+            this.circularProgressBar1 = new CircularProgressBar.CircularProgressBar();
             this.button2 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
@@ -56,7 +58,7 @@
             this.sec.AutoSize = true;
             this.sec.Font = new System.Drawing.Font("Franklin Gothic Demi", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.sec.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.sec.Location = new System.Drawing.Point(180, 111);
+            this.sec.Location = new System.Drawing.Point(182, 110);
             this.sec.Name = "sec";
             this.sec.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.sec.Size = new System.Drawing.Size(55, 37);
@@ -112,13 +114,45 @@
             this.tick_rest.Interval = 1000;
             this.tick_rest.Tick += new System.EventHandler(this.tickrest);
             // 
+            // circularProgressBar1
+            // 
+            this.circularProgressBar1.AnimationFunction = WinFormAnimation.KnownAnimationFunctions.Liner;
+            this.circularProgressBar1.AnimationSpeed = 500;
+            this.circularProgressBar1.BackColor = System.Drawing.Color.Transparent;
+            this.circularProgressBar1.Font = new System.Drawing.Font("Microsoft Sans Serif", 72F, System.Drawing.FontStyle.Bold);
+            this.circularProgressBar1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.circularProgressBar1.InnerColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
+            this.circularProgressBar1.InnerMargin = 2;
+            this.circularProgressBar1.InnerWidth = -1;
+            this.circularProgressBar1.Location = new System.Drawing.Point(64, 26);
+            this.circularProgressBar1.MarqueeAnimationSpeed = 2000;
+            this.circularProgressBar1.Name = "circularProgressBar1";
+            this.circularProgressBar1.OuterColor = System.Drawing.Color.Gray;
+            this.circularProgressBar1.OuterMargin = -25;
+            this.circularProgressBar1.OuterWidth = 26;
+            this.circularProgressBar1.ProgressColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.circularProgressBar1.ProgressWidth = 25;
+            this.circularProgressBar1.SecondaryFont = new System.Drawing.Font("Microsoft Sans Serif", 36F);
+            this.circularProgressBar1.Size = new System.Drawing.Size(216, 204);
+            this.circularProgressBar1.StartAngle = 270;
+            this.circularProgressBar1.SubscriptColor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(166)))), ((int)(((byte)(166)))));
+            this.circularProgressBar1.SubscriptMargin = new System.Windows.Forms.Padding(10, -35, 0, 0);
+            this.circularProgressBar1.SubscriptText = ".23";
+            this.circularProgressBar1.SuperscriptColor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(166)))), ((int)(((byte)(166)))));
+            this.circularProgressBar1.SuperscriptMargin = new System.Windows.Forms.Padding(10, 35, 0, 0);
+            this.circularProgressBar1.SuperscriptText = "°C";
+            this.circularProgressBar1.TabIndex = 6;
+            this.circularProgressBar1.TextMargin = new System.Windows.Forms.Padding(8, 8, 0, 0);
+            this.circularProgressBar1.Value = 68;
+            // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(10, 12);
+            this.button2.Image = ((System.Drawing.Image)(resources.GetObject("button2.Image")));
+            this.button2.Location = new System.Drawing.Point(0, 3);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(38, 28);
+            this.button2.Size = new System.Drawing.Size(30, 33);
             this.button2.TabIndex = 5;
-            this.button2.Text = "?";
+            this.button2.TextImageRelation = System.Windows.Forms.TextImageRelation.TextAboveImage;
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.Button2_Click);
             // 
@@ -128,11 +162,12 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
             this.ClientSize = new System.Drawing.Size(366, 502);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.High);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.min);
             this.Controls.Add(this.sec);
+            this.Controls.Add(this.circularProgressBar1);
+            this.Controls.Add(this.button2);
+            this.Controls.Add(this.High);
             this.Controls.Add(this.button1);
             this.Name = "Form1";
             this.Text = "Form1";
@@ -151,6 +186,7 @@
         private System.Windows.Forms.Timer tick_wk;
         private System.Windows.Forms.Label High;
         private System.Windows.Forms.Timer tick_rest;
+        private CircularProgressBar.CircularProgressBar circularProgressBar1;
         private System.Windows.Forms.Button button2;
     }
 }
