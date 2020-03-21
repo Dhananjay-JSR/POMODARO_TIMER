@@ -30,7 +30,6 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            this.button1 = new System.Windows.Forms.Button();
             this.sec = new System.Windows.Forms.Label();
             this.min = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
@@ -38,24 +37,14 @@
             this.High = new System.Windows.Forms.Label();
             this.tick_rest = new System.Windows.Forms.Timer(this.components);
             this.circularProgressBar1 = new CircularProgressBar.CircularProgressBar();
-            this.bunifuImageButton1 = new Bunifu.Framework.UI.BunifuImageButton();
             this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.bunifuImageButton2 = new Bunifu.Framework.UI.BunifuImageButton();
-            ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton1)).BeginInit();
+            this.bunifuImageButton3 = new Bunifu.Framework.UI.BunifuImageButton();
+            this.bunifuImageButton1 = new Bunifu.Framework.UI.BunifuImageButton();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton1)).BeginInit();
             this.SuspendLayout();
-            // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.Color.White;
-            this.button1.Font = new System.Drawing.Font("Sitka Small", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(120, 369);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(110, 41);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "START";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.Button1_Click);
             // 
             // sec
             // 
@@ -102,10 +91,9 @@
             // 
             // High
             // 
-            this.High.AutoSize = true;
             this.High.Font = new System.Drawing.Font("Franklin Gothic Demi", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.High.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.High.Location = new System.Drawing.Point(3, 256);
+            this.High.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(218)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.High.Location = new System.Drawing.Point(119, 272);
             this.High.Name = "High";
             this.High.Size = new System.Drawing.Size(121, 37);
             this.High.TabIndex = 4;
@@ -125,16 +113,16 @@
             this.circularProgressBar1.BackColor = System.Drawing.Color.Transparent;
             this.circularProgressBar1.Font = new System.Drawing.Font("Microsoft Sans Serif", 72F, System.Drawing.FontStyle.Bold);
             this.circularProgressBar1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.circularProgressBar1.InnerColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
+            this.circularProgressBar1.InnerColor = System.Drawing.Color.FromArgb(((int)(((byte)(79)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
             this.circularProgressBar1.InnerMargin = 2;
             this.circularProgressBar1.InnerWidth = -1;
             this.circularProgressBar1.Location = new System.Drawing.Point(64, 26);
             this.circularProgressBar1.MarqueeAnimationSpeed = 2000;
             this.circularProgressBar1.Name = "circularProgressBar1";
-            this.circularProgressBar1.OuterColor = System.Drawing.Color.Gray;
+            this.circularProgressBar1.OuterColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(42)))), ((int)(((byte)(74)))));
             this.circularProgressBar1.OuterMargin = -25;
             this.circularProgressBar1.OuterWidth = 26;
-            this.circularProgressBar1.ProgressColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.circularProgressBar1.ProgressColor = System.Drawing.Color.FromArgb(((int)(((byte)(150)))), ((int)(((byte)(228)))), ((int)(((byte)(255)))));
             this.circularProgressBar1.ProgressWidth = 25;
             this.circularProgressBar1.SecondaryFont = new System.Drawing.Font("Microsoft Sans Serif", 36F);
             this.circularProgressBar1.Size = new System.Drawing.Size(216, 204);
@@ -148,20 +136,6 @@
             this.circularProgressBar1.TabIndex = 6;
             this.circularProgressBar1.TextMargin = new System.Windows.Forms.Padding(8, 8, 0, 0);
             this.circularProgressBar1.Value = 68;
-            // 
-            // bunifuImageButton1
-            // 
-            this.bunifuImageButton1.BackColor = System.Drawing.Color.Transparent;
-            this.bunifuImageButton1.Image = ((System.Drawing.Image)(resources.GetObject("bunifuImageButton1.Image")));
-            this.bunifuImageButton1.ImageActive = null;
-            this.bunifuImageButton1.Location = new System.Drawing.Point(12, 12);
-            this.bunifuImageButton1.Name = "bunifuImageButton1";
-            this.bunifuImageButton1.Size = new System.Drawing.Size(35, 35);
-            this.bunifuImageButton1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.bunifuImageButton1.TabIndex = 7;
-            this.bunifuImageButton1.TabStop = false;
-            this.bunifuImageButton1.Zoom = 10;
-            this.bunifuImageButton1.Click += new System.EventHandler(this.BunifuImageButton1_Click);
             // 
             // bunifuElipse1
             // 
@@ -182,12 +156,41 @@
             this.bunifuImageButton2.Zoom = 10;
             this.bunifuImageButton2.Click += new System.EventHandler(this.BunifuImageButton2_Click);
             // 
+            // bunifuImageButton3
+            // 
+            this.bunifuImageButton3.BackColor = System.Drawing.Color.Transparent;
+            this.bunifuImageButton3.Image = ((System.Drawing.Image)(resources.GetObject("bunifuImageButton3.Image")));
+            this.bunifuImageButton3.ImageActive = null;
+            this.bunifuImageButton3.Location = new System.Drawing.Point(150, 371);
+            this.bunifuImageButton3.Name = "bunifuImageButton3";
+            this.bunifuImageButton3.Size = new System.Drawing.Size(42, 39);
+            this.bunifuImageButton3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.bunifuImageButton3.TabIndex = 9;
+            this.bunifuImageButton3.TabStop = false;
+            this.bunifuImageButton3.Zoom = 10;
+            this.bunifuImageButton3.Click += new System.EventHandler(this.BunifuImageButton3_Click);
+            // 
+            // bunifuImageButton1
+            // 
+            this.bunifuImageButton1.BackColor = System.Drawing.Color.Transparent;
+            this.bunifuImageButton1.Image = ((System.Drawing.Image)(resources.GetObject("bunifuImageButton1.Image")));
+            this.bunifuImageButton1.ImageActive = null;
+            this.bunifuImageButton1.Location = new System.Drawing.Point(12, 12);
+            this.bunifuImageButton1.Name = "bunifuImageButton1";
+            this.bunifuImageButton1.Size = new System.Drawing.Size(35, 35);
+            this.bunifuImageButton1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.bunifuImageButton1.TabIndex = 7;
+            this.bunifuImageButton1.TabStop = false;
+            this.bunifuImageButton1.Zoom = 10;
+            this.bunifuImageButton1.Click += new System.EventHandler(this.BunifuImageButton1_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(79)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
             this.ClientSize = new System.Drawing.Size(366, 502);
+            this.Controls.Add(this.bunifuImageButton3);
             this.Controls.Add(this.bunifuImageButton2);
             this.Controls.Add(this.bunifuImageButton1);
             this.Controls.Add(this.label1);
@@ -195,21 +198,19 @@
             this.Controls.Add(this.sec);
             this.Controls.Add(this.circularProgressBar1);
             this.Controls.Add(this.High);
-            this.Controls.Add(this.button1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label sec;
         private System.Windows.Forms.Label min;
         private System.Windows.Forms.Label label1;
@@ -217,9 +218,10 @@
         private System.Windows.Forms.Label High;
         private System.Windows.Forms.Timer tick_rest;
         private CircularProgressBar.CircularProgressBar circularProgressBar1;
-        private Bunifu.Framework.UI.BunifuImageButton bunifuImageButton1;
         private Bunifu.Framework.UI.BunifuElipse bunifuElipse1;
         private Bunifu.Framework.UI.BunifuImageButton bunifuImageButton2;
+        private Bunifu.Framework.UI.BunifuImageButton bunifuImageButton3;
+        private Bunifu.Framework.UI.BunifuImageButton bunifuImageButton1;
     }
 }
 

@@ -77,13 +77,7 @@ namespace POMODARO
             }
         }
 
-        private void Button1_Click(object sender, EventArgs e)
-        {
-            
-            tick_wk.Enabled = true;
-            minute++;
-            circularProgressBar1.Value = minute;
-        }
+       
 
         private void High_Click(object sender, EventArgs e)
         {
@@ -100,6 +94,14 @@ namespace POMODARO
         private void BunifuImageButton2_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void BunifuImageButton3_Click(object sender, EventArgs e)
+        {
+
+            tick_wk.Enabled = true;
+            minute++;
+            circularProgressBar1.Value = minute;
         }
     }
 }
