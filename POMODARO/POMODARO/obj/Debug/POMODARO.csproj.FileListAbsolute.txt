@@ -21,3 +21,4 @@ C:\Users\EDIUS\Music\OnlineWebTest\POMODARO_TIMER\POMODARO\POMODARO\obj\Debug\PO
 C:\Users\EDIUS\Music\OnlineWebTest\POMODARO_TIMER\POMODARO\POMODARO\obj\Debug\POMODARO.csproj.CopyComplete
 C:\Users\EDIUS\Music\OnlineWebTest\POMODARO_TIMER\POMODARO\POMODARO\obj\Debug\POMODARO.exe
 C:\Users\EDIUS\Music\OnlineWebTest\POMODARO_TIMER\POMODARO\POMODARO\obj\Debug\POMODARO.pdb
+C:\Users\EDIUS\Music\OnlineWebTest\POMODARO_TIMER\POMODARO\POMODARO\bin\Debug\Bunifu_UI_v1.52.dll
