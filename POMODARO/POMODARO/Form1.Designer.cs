@@ -93,9 +93,9 @@
             // 
             this.High.Font = new System.Drawing.Font("Franklin Gothic Demi", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.High.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(218)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.High.Location = new System.Drawing.Point(119, 272);
+            this.High.Location = new System.Drawing.Point(5, 279);
             this.High.Name = "High";
-            this.High.Size = new System.Drawing.Size(121, 37);
+            this.High.Size = new System.Drawing.Size(349, 37);
             this.High.TabIndex = 4;
             this.High.Text = "READY ";
             this.High.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;

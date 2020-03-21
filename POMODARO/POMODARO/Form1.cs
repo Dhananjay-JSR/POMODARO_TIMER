@@ -41,7 +41,7 @@ namespace POMODARO
         {
             tick_rest.Enabled = false;
             second--;
-            High.Text = "Time to Take WORK";
+            High.Text = "Time to WORK";
             if (second==00)                                         //SECOND TO CHANGE MINUTE
             {
                 minute--;
