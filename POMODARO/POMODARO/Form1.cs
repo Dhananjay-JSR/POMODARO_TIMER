@@ -96,5 +96,10 @@ namespace POMODARO
         {
             MessageBox.Show("PROGRAM BY DHANANJAY SENDAY");
         }
+
+        private void BunifuImageButton2_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }
