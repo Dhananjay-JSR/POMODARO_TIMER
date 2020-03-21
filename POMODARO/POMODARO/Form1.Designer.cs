@@ -41,6 +41,10 @@
             this.bunifuImageButton2 = new Bunifu.Framework.UI.BunifuImageButton();
             this.bunifuImageButton3 = new Bunifu.Framework.UI.BunifuImageButton();
             this.bunifuImageButton1 = new Bunifu.Framework.UI.BunifuImageButton();
+            this.label2 = new System.Windows.Forms.Label();
+            this.hg = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton1)).BeginInit();
@@ -118,6 +122,7 @@
             this.circularProgressBar1.InnerWidth = -1;
             this.circularProgressBar1.Location = new System.Drawing.Point(64, 26);
             this.circularProgressBar1.MarqueeAnimationSpeed = 2000;
+            this.circularProgressBar1.Maximum = 60;
             this.circularProgressBar1.Name = "circularProgressBar1";
             this.circularProgressBar1.OuterColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(42)))), ((int)(((byte)(74)))));
             this.circularProgressBar1.OuterMargin = -25;
@@ -135,7 +140,7 @@
             this.circularProgressBar1.SuperscriptText = "°C";
             this.circularProgressBar1.TabIndex = 6;
             this.circularProgressBar1.TextMargin = new System.Windows.Forms.Padding(8, 8, 0, 0);
-            this.circularProgressBar1.Value = 68;
+            this.circularProgressBar1.Value = 60;
             // 
             // bunifuElipse1
             // 
@@ -163,7 +168,7 @@
             this.bunifuImageButton3.ImageActive = null;
             this.bunifuImageButton3.Location = new System.Drawing.Point(150, 371);
             this.bunifuImageButton3.Name = "bunifuImageButton3";
-            this.bunifuImageButton3.Size = new System.Drawing.Size(42, 39);
+            this.bunifuImageButton3.Size = new System.Drawing.Size(45, 44);
             this.bunifuImageButton3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.bunifuImageButton3.TabIndex = 9;
             this.bunifuImageButton3.TabStop = false;
@@ -184,6 +189,41 @@
             this.bunifuImageButton1.Zoom = 10;
             this.bunifuImageButton1.Click += new System.EventHandler(this.BunifuImageButton1_Click);
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(313, 480);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(41, 13);
+            this.label2.TabIndex = 10;
+            this.label2.Text = "V 0.0.a";
+            // 
+            // hg
+            // 
+            this.hg.AutoSize = true;
+            this.hg.Location = new System.Drawing.Point(12, 480);
+            this.hg.Name = "hg";
+            this.hg.Size = new System.Drawing.Size(47, 13);
+            this.hg.TabIndex = 11;
+            this.hg.Text = "ROUND";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(64, 479);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(35, 13);
+            this.label3.TabIndex = 12;
+            this.label3.Text = "label3";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(142, 439);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(0, 13);
+            this.label4.TabIndex = 13;
+            // 
             // Form1
             // 
             this.AllowDrop = true;
@@ -191,6 +231,10 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(79)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
             this.ClientSize = new System.Drawing.Size(366, 502);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.hg);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.bunifuImageButton3);
             this.Controls.Add(this.bunifuImageButton2);
             this.Controls.Add(this.bunifuImageButton1);
@@ -223,6 +267,10 @@
         private Bunifu.Framework.UI.BunifuImageButton bunifuImageButton2;
         private Bunifu.Framework.UI.BunifuImageButton bunifuImageButton3;
         private Bunifu.Framework.UI.BunifuImageButton bunifuImageButton1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
+        private Bunifu.Framework.UI.BunifuCustomLabel hg;
+        private System.Windows.Forms.Label label4;
     }
 }
 

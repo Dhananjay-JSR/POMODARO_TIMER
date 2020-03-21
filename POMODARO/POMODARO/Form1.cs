@@ -29,16 +29,23 @@ namespace POMODARO
 
         private void Form1_Load(object sender, EventArgs e)
         {
-           // circularProgressBar1.Value = minute;
+            // circularProgressBar1.Value = minute;
+            label3.Text = round.ToString();
 
         }
         int second = 60;
         int minute=24;
-      
        
+
 
         private void TICK_WORK(object sender, EventArgs e)
         {
+           // percentage = (60-second)*1.66;
+           // label4.Text = percentage.ToString();
+            //percentage = (percentage/60)*100;
+            //label4.Text = percentage.ToString();
+            circularProgressBar1.Value = 60-second;
+
             tick_rest.Enabled = false;
             second--;
             High.Text = "Time to WORK";
@@ -62,7 +69,17 @@ namespace POMODARO
             tick_wk.Enabled = false;
             second--;
             High.Text = "Time to Take Break";
-            
+
+            circularProgressBar1.Value = 60 - second;
+
+
+
+
+
+
+
+
+
             if (second == 00)                                       //SECOMD TO CHNAGE MINUTE
             {
                 minute--;
@@ -74,10 +91,11 @@ namespace POMODARO
             {
                 minute = 25;
                 tick_wk.Enabled = true;
+                label3.Text=round++.ToString();
             }
         }
 
-       
+        int round = 0;
 
         private void High_Click(object sender, EventArgs e)
         {
@@ -101,7 +119,7 @@ namespace POMODARO
 
             tick_wk.Enabled = true;
             
-            circularProgressBar1.Value = minute;
+            
         }
     }
 }
