@@ -45,6 +45,7 @@
             this.hg = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
+            this.bunifuRange1 = new Bunifu.Framework.UI.BunifuRange();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton1)).BeginInit();
@@ -225,6 +226,20 @@
             this.label4.TabIndex = 13;
             this.label4.Click += new System.EventHandler(this.Label4_Click);
             // 
+            // bunifuRange1
+            // 
+            this.bunifuRange1.BackColor = System.Drawing.Color.Transparent;
+            this.bunifuRange1.BackgroudColor = System.Drawing.Color.DarkGray;
+            this.bunifuRange1.BorderRadius = 0;
+            this.bunifuRange1.IndicatorColor = System.Drawing.Color.RosyBrown;
+            this.bunifuRange1.Location = new System.Drawing.Point(283, 385);
+            this.bunifuRange1.MaximumRange = 100;
+            this.bunifuRange1.Name = "bunifuRange1";
+            this.bunifuRange1.RangeMax = 49;
+            this.bunifuRange1.RangeMin = 0;
+            this.bunifuRange1.Size = new System.Drawing.Size(70, 30);
+            this.bunifuRange1.TabIndex = 14;
+            // 
             // Form1
             // 
             this.AllowDrop = true;
@@ -232,6 +247,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(79)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
             this.ClientSize = new System.Drawing.Size(366, 502);
+            this.Controls.Add(this.bunifuRange1);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.hg);
@@ -274,6 +290,7 @@
         private System.Windows.Forms.Label label3;
         private Bunifu.Framework.UI.BunifuCustomLabel hg;
         private System.Windows.Forms.Label label4;
+        private Bunifu.Framework.UI.BunifuRange bunifuRange1;
     }
 }
 

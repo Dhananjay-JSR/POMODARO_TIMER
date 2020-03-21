@@ -17,7 +17,7 @@ namespace POMODARO
         {
             InitializeComponent();
         }
-
+        SoundPlayer player = new SoundPlayer();
         private void Sec_Click(object sender, EventArgs e)
         {
 
@@ -61,7 +61,7 @@ namespace POMODARO
             { 
                 second = 60;
             minute = 4;
-                SoundPlayer player = new SoundPlayer();
+                
                 player.SoundLocation = @"C:\Windows\Media\Alarm01.wav";
                 player.Play();
                 tick_rest.Enabled = true;                               //GO TO REST MODE
@@ -94,7 +94,7 @@ namespace POMODARO
             if (minute == 0)                                            //4MINUTE BREAK TIME
             {
                 minute = 25;
-                SoundPlayer player = new SoundPlayer();
+                
                 player.SoundLocation = @"C:\Windows\Media\Alarm01.wav";
                 player.Play();
                 label3.Text = round++.ToString();
@@ -126,9 +126,10 @@ namespace POMODARO
         {
 
             tick_wk.Enabled = true;
-            SoundPlayer player = new SoundPlayer();
+            
             player.SoundLocation = @"C:\Windows\Media\notify.wav";
             player.Play();
+           
 
 
         }
