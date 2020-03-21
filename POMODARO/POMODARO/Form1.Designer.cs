@@ -45,6 +45,7 @@
             this.hg = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
+            this.bunifuRating1 = new Bunifu.Framework.UI.BunifuRating();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton1)).BeginInit();
@@ -224,6 +225,16 @@
             this.label4.Size = new System.Drawing.Size(0, 13);
             this.label4.TabIndex = 13;
             // 
+            // bunifuRating1
+            // 
+            this.bunifuRating1.BackColor = System.Drawing.Color.Transparent;
+            this.bunifuRating1.ForeColor = System.Drawing.Color.SeaGreen;
+            this.bunifuRating1.Location = new System.Drawing.Point(12, 421);
+            this.bunifuRating1.Name = "bunifuRating1";
+            this.bunifuRating1.Size = new System.Drawing.Size(316, 50);
+            this.bunifuRating1.TabIndex = 14;
+            this.bunifuRating1.Value = 0;
+            // 
             // Form1
             // 
             this.AllowDrop = true;
@@ -231,6 +242,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(79)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
             this.ClientSize = new System.Drawing.Size(366, 502);
+            this.Controls.Add(this.bunifuRating1);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.hg);
@@ -273,6 +285,7 @@
         private System.Windows.Forms.Label label3;
         private Bunifu.Framework.UI.BunifuCustomLabel hg;
         private System.Windows.Forms.Label label4;
+        private Bunifu.Framework.UI.BunifuRating bunifuRating1;
     }
 }
 
